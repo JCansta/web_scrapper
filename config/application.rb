@@ -37,8 +37,5 @@ module WebScraper
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    Kimurai.configure do |config|
-      config.selenium_chrome_path = '/.cache/selenium/chromedriver'
-    end
   end
 end
