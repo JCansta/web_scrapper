@@ -1,0 +1,26 @@
+[
+  {
+    "Buenavista": {
+      "2D Doblado": [
+        "8:30 PM"
+      ],
+      "MegaSala 2D Doblado": [
+        "3:40 PM"
+      ],
+      "2D Subtitulado": [
+        "5:20 PM"
+      ],
+      "MegaSala 2D Subtitulado": [
+        "6:30 PM",
+        "9:20 PM"
+      ]
+    },
+    "Parque Alegra": {
+      "MegaSala 3D Doblado": [
+        "3:30 PM",
+        "6:40 PM",
+        "9:50 PM"
+      ]
+    }
+  }
+]

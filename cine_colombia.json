@@ -1,0 +1,33 @@
+[
+  {
+    "Buenavista": {
+      "2D Doblado": [
+        "2:10 PM",
+        "4:30 PM",
+        "5:30 PM"
+      ],
+      "Dinamix 2D Doblado": [
+        "6:10 PM"
+      ],
+      "2D Subtitulado": [
+        "1:10 PM",
+        "7:50 PM",
+        "8:50 PM"
+      ],
+      "Dinamix 2D Subtitulado": [
+        "3:00 PM",
+        "9:30 PM"
+      ]
+    },
+    "Parque Alegra": {
+      "2D Doblado": [
+        "1:20 PM",
+        "2:30 PM",
+        "5:00 PM",
+        "6:00 PM",
+        "8:20 PM",
+        "9:30 PM"
+      ]
+    }
+  }
+]
