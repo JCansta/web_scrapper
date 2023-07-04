@@ -44,3 +44,5 @@ gem 'kimurai'
 gem 'httparty'
 
 gem "ruby-openai"
+
+gem "unicode_utils"

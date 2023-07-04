@@ -3,8 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :movies do
         collection do
-          post '/cine_colombia', to: 'movies#scrape_cine_colombia'
-          post '/royal_films', to: 'movies#scrape_royal_films'
+          post '/cine_colombia', to: 'movies#cine_colombia'
+          post '/royal_films', to: 'movies#royal_films'
         end
       end
 
