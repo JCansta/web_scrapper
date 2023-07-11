@@ -1,2 +1,2 @@
-class Schedule < ApplicationRecord
+class Schedule < ActiveRecord::Base
 end
