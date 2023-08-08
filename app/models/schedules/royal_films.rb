@@ -6,7 +6,7 @@ module Schedules
 
         class BodyChangedError < StandardError; end;
 
-        def construct
+        def generate
             p fetch_data
         end
     end
