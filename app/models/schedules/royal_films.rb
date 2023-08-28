@@ -36,6 +36,8 @@ module Schedules
                                 slug: get_slug(movies[index]),
                                 url: get_url(movies[index]),
                                 original_id: movies[index]['id'],
+                                created_at: DateTime.now,
+                                updated_at: DateTime.now
                             }
                         end
                     end
@@ -45,11 +47,7 @@ module Schedules
         end
 
         def save(schedules)
-            ActiveRecord::Base.transaction do
-                schedules.each do |movie|
-                    Schedule.create(movie)
-                end
-            end
+            Schedule.insert_all(schedules)
         end
         private
 
