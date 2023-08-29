@@ -6,6 +6,11 @@ module Schedules
 
         class BodyChangedError < StandardError; end;
 
+        def perform!
+            response = request_data
+            Schedule.insert_all(constructor(response))
+        end
+
         def request_data
             current_date = Date.today
             formatted_date = current_date.strftime('%Y-%m-%d')
@@ -28,7 +33,7 @@ module Schedules
                         unless time.empty?
                             all_movies << {
                                 theather_name: theather_name,
-                                date_time: DateTime.parse(time['schedule']).in_time_zone('America/Bogota'),
+                                date_time: time['schedule'],
                                 title: movies[index]['title'],
                                 movie_format: "#{time["format_movie"]['_format']['name']} - #{time["format_movie"]['_caption']['name']}",
                                 image_url: movies[index]['poster_photo'],
@@ -46,9 +51,6 @@ module Schedules
             all_movies
         end
 
-        def save(schedules)
-            Schedule.insert_all(schedules)
-        end
         private
 
         def get_slug(movie)
