@@ -6,6 +6,8 @@ class Api::V1::MoviesController < ApplicationController
     scheduleImporter = Schedules::ScheduleFactory.for(:royal_films)
     scheduleImporter.perform!
 
+    'testing'
+
     render json: Schedule.all
   end
 
